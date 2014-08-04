@@ -1,3 +1,0 @@
-Content\Ken.xnb
-Content\skullball.xnb
-Content\01-overworld.xnb
