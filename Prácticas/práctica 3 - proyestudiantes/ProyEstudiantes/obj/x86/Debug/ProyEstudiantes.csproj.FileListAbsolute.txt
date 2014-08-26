@@ -1,0 +1,7 @@
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\bin\Debug\ProyEstudiantes.exe
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\bin\Debug\ProyEstudiantes.pdb
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.frmEstudiantes.resources
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.Properties.Resources.resources
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.csproj.GenerateResource.Cache
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.exe
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.pdb
