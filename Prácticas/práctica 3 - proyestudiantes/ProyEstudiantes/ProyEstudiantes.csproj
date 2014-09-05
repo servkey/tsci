@@ -53,6 +53,8 @@
     <Compile Include="Modelo\Persona.cs" />
     <Compile Include="Modelo\Profesor.cs" />
     <Compile Include="Modelo\ProfesorRepositorio.cs" />
+    <Compile Include="Util\Conexion.cs" />
+    <Compile Include="Util\MSSQLConexion.cs" />
     <Compile Include="Vista\frmEstudiantes.cs">
       <SubType>Form</SubType>
     </Compile>

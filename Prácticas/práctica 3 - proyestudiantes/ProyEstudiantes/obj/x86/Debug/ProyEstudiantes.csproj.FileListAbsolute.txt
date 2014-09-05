@@ -5,3 +5,4 @@ c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstud
 c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.csproj.GenerateResource.Cache
 c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.exe
 c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.pdb
+C:\Users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.csprojResolveAssemblyReference.cache
