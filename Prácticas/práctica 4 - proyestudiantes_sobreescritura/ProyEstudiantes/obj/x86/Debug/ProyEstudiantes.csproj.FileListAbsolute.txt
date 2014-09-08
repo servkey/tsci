@@ -1,0 +1,16 @@
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\bin\Debug\ProyEstudiantes.exe
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\bin\Debug\ProyEstudiantes.pdb
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.frmEstudiantes.resources
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.Properties.Resources.resources
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.csproj.GenerateResource.Cache
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.exe
+c:\users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.pdb
+C:\Users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.csprojResolveAssemblyReference.cache
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 4 - proyestudiantes_sobreescritura\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 4 - proyestudiantes_sobreescritura\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 4 - proyestudiantes_sobreescritura\ProyEstudiantes\bin\Debug\ProyEstudiantes.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 4 - proyestudiantes_sobreescritura\ProyEstudiantes\bin\Debug\ProyEstudiantes.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 4 - proyestudiantes_sobreescritura\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.csprojResolveAssemblyReference.cache
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 4 - proyestudiantes_sobreescritura\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.frmEstudiantes.resources
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 4 - proyestudiantes_sobreescritura\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.Properties.Resources.resources
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 4 - proyestudiantes_sobreescritura\ProyEstudiantes\obj\x86\Debug\ProyEstudiantes.csproj.GenerateResource.Cache
