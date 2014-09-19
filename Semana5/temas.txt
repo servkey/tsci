@@ -1,0 +1,39 @@
+
+Equipo #3
+HTML/CSS
+	w3schools
+	DOM HTML
+	HTML, XHTML
+	HTML5
+	CSS
+	CSS3
+	Bootstrap
+
+Equipo #2 
+JavaScript
+	JavaScript
+	jQuery
+	jQueryMobile	
+	AngularJS
+	AJAX
+	JSON
+	Google Maps
+
+Equipo #1
+XML Tutorials
+	XML
+	DTD, Schema
+	XML DOM
+	XPath
+	XSLT
+	XQuery
+	XSL-FO	
+	
+Equipo #3
+	RSS
+	SVG
+
+
+
+Miércoles
+24 de Septiembre de 2014
