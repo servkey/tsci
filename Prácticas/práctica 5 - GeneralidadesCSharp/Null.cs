@@ -3,6 +3,10 @@ class NullableExample
     static void Main()
     {
 	int @if = 0;
+	//int? x = 0;
+
+	int? num = null;
+
 	//System.Nullable<int> num = null;
         if (num.HasValue == true)
         {

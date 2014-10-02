@@ -21,18 +21,20 @@ public struct Book
     }
 }
 
-
-
 public class Program{
 	static void Main(){
+		int x = 0;
+		int y = x;
+		x = 15;
+		y = 30;
+
 		Book b = new Book();
 		b.Price = 1;
 		b.title = "titulo";
 		
 		b.author = "alguien";
 
-		Book b1 = b;
-		
+		Book b1 = b; // Crea una copia
 		b1.price = 23;
 
 		b.price = 21;
