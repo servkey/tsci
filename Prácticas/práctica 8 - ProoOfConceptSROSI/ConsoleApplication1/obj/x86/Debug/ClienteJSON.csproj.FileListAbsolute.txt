@@ -27,3 +27,10 @@ C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\6_Febrero14_Mayo14\TSCI\repo
 C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\6_Febrero14_Mayo14\TSCI\repository\tsc1\Prácticas\práctica16 - ProoOfConceptSROSI\ConsoleApplication1\bin\Debug\es\System.Net.Http.resources.dll
 C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\6_Febrero14_Mayo14\TSCI\repository\tsc1\Prácticas\práctica16 - ProoOfConceptSROSI\ConsoleApplication1\bin\Debug\es\System.Net.Http.Formatting.resources.dll
 C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\6_Febrero14_Mayo14\TSCI\repository\tsc1\Prácticas\práctica16 - ProoOfConceptSROSI\ConsoleApplication1\obj\x86\Debug\ClienteJSON.csprojResolveAssemblyReference.cache
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 8 - ProoOfConceptSROSI\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 8 - ProoOfConceptSROSI\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 8 - ProoOfConceptSROSI\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 8 - ProoOfConceptSROSI\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 8 - ProoOfConceptSROSI\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 8 - ProoOfConceptSROSI\ConsoleApplication1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 8 - ProoOfConceptSROSI\ConsoleApplication1\obj\x86\Debug\ClienteJSON.csprojResolveAssemblyReference.cache

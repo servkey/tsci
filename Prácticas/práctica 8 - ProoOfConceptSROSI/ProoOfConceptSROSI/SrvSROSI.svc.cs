@@ -14,7 +14,7 @@ namespace ProoOfConceptSROSI
             return "Hola";
         }
 
-        public Estudiante[] GetEstudiantes()
+        public Estudiante[] GetEstudiantes()        
         {
             Estudiante e = new Estudiante();
             e.Id = "S10390";

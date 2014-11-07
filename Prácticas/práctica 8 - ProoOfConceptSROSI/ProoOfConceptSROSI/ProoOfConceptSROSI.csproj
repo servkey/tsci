@@ -59,7 +59,7 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="Prueba.asmx" />
+    <Content Include="Prueba.svc" />
     <Content Include="SrvSROSI.svc" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -68,7 +68,9 @@
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Test.svc" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -122,13 +124,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IPrueba.cs" />
     <Compile Include="ISrvSROSI.cs" />
     <Compile Include="ITest.cs" />
     <Compile Include="Model\Estudiante.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Prueba.asmx.cs">
-      <DependentUpon>Prueba.asmx</DependentUpon>
-      <SubType>Component</SubType>
+    <Compile Include="Prueba.svc.cs">
+      <DependentUpon>Prueba.svc</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
