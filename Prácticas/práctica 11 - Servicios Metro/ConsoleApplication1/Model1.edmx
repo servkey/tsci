@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="equipo1Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="equipo1ModelStoreContainer">
+          <EntitySet Name="horarios" EntityType="equipo1Model.Store.horarios" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="rutas" EntityType="equipo1Model.Store.rutas" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="horarios">
+          <Key>
+            <PropertyRef Name="idHorarios" />
+          </Key>
+          <Property Name="idHorarios" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="dia" Type="varchar" Nullable="false" MaxLength="12" />
+          <Property Name="hInicio" Type="int" Nullable="false" />
+          <Property Name="hFin" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="rutas">
+          <Key>
+            <PropertyRef Name="idRutas" />
+          </Key>
+          <Property Name="idRutas" Type="int" Nullable="false" />
+          <Property Name="numRuta" Type="int" Nullable="false" />
+          <Property Name="linea" Type="int" Nullable="false" />
+          <Property Name="nombre" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="latitud" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="longitud" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="afluencia" Type="varchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="equipo1Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="equipo1Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="horarios" EntityType="equipo1Model.horarios" />
+          <EntitySet Name="rutas" EntityType="equipo1Model.rutas" />
+        </EntityContainer>
+        <EntityType Name="horarios">
+          <Key>
+            <PropertyRef Name="idHorarios" />
+          </Key>
+          <Property Name="idHorarios" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dia" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+          <Property Name="hInicio" Type="Int32" Nullable="false" />
+          <Property Name="hFin" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="rutas">
+          <Key>
+            <PropertyRef Name="idRutas" />
+          </Key>
+          <Property Name="idRutas" Type="Int32" Nullable="false" />
+          <Property Name="numRuta" Type="Int32" Nullable="false" />
+          <Property Name="linea" Type="Int32" Nullable="false" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="latitud" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="longitud" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="afluencia" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="equipo1ModelStoreContainer" CdmEntityContainer="equipo1Entities">
+          <EntitySetMapping Name="horarios">
+            <EntityTypeMapping TypeName="equipo1Model.horarios">
+              <MappingFragment StoreEntitySet="horarios">
+                <ScalarProperty Name="idHorarios" ColumnName="idHorarios" />
+                <ScalarProperty Name="dia" ColumnName="dia" />
+                <ScalarProperty Name="hInicio" ColumnName="hInicio" />
+                <ScalarProperty Name="hFin" ColumnName="hFin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="rutas">
+            <EntityTypeMapping TypeName="equipo1Model.rutas">
+              <MappingFragment StoreEntitySet="rutas">
+                <ScalarProperty Name="idRutas" ColumnName="idRutas" />
+                <ScalarProperty Name="numRuta" ColumnName="numRuta" />
+                <ScalarProperty Name="linea" ColumnName="linea" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="latitud" ColumnName="latitud" />
+                <ScalarProperty Name="longitud" ColumnName="longitud" />
+                <ScalarProperty Name="afluencia" ColumnName="afluencia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="equipo1Model.horarios" Width="1.5" PointX="0.75" PointY="0.75" Height="1.787985026041667" IsExpanded="true" />
+        <EntityTypeShape EntityType="equipo1Model.rutas" Width="1.5" PointX="2.75" PointY="0.75" Height="2.3648893229166665" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
