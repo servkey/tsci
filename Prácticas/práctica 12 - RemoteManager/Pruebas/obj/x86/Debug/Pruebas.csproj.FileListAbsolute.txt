@@ -42,7 +42,6 @@ C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\
 C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 12 - RemoteManager\Pruebas\obj\x86\Debug\Pruebas.pdb
 C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 12 - RemoteManager\Pruebas\bin\Debug\Pruebas.exe
 C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 12 - RemoteManager\Pruebas\bin\Debug\Pruebas.pdb
-C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 12 - RemoteManager\Pruebas\bin\Debug\WQLUtil.dll
 C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 12 - RemoteManager\Pruebas\bin\Debug\WQLUtil.pdb
 C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 12 - RemoteManager\Pruebas\obj\x86\Debug\Pruebas.csprojResolveAssemblyReference.cache
 C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 12 - RemoteManager\Pruebas\obj\x86\Debug\Pruebas.Test.resources
