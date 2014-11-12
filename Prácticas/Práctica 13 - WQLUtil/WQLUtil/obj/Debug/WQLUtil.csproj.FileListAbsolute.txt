@@ -1,0 +1,10 @@
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\WQLUtil\bin\Debug\WQLUtil.dll
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\WQLUtil\bin\Debug\WQLUtil.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\WQLUtil\obj\Debug\WQLUtil.dll
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\WQLUtil\obj\Debug\WQLUtil.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\WQLUtil\obj\Debug\WQLUtil.csprojResolveAssemblyReference.cache
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\WQLUtil\bin\Debug\WQLUtil.dll
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\WQLUtil\bin\Debug\WQLUtil.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\WQLUtil\obj\Debug\WQLUtil.dll
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\WQLUtil\obj\Debug\WQLUtil.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\WQLUtil\obj\Debug\WQLUtil.csprojResolveAssemblyReference.cache
