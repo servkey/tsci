@@ -1,4 +1,0 @@
-C:\Users\servkey\Google Drive\Documentos\PA\DCC\Source\social-sensor\src\ConsoleApplication1\Metro\bin\Metro.dll
-C:\Users\servkey\Google Drive\Documentos\PA\DCC\Source\social-sensor\src\ConsoleApplication1\Metro\bin\Metro.pdb
-C:\Users\servkey\Google Drive\Documentos\PA\DCC\Source\social-sensor\src\ConsoleApplication1\Metro\obj\Debug\Metro.dll
-C:\Users\servkey\Google Drive\Documentos\PA\DCC\Source\social-sensor\src\ConsoleApplication1\Metro\obj\Debug\Metro.pdb

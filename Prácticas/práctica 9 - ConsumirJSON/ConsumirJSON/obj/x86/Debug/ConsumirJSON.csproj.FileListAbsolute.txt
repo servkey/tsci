@@ -1,5 +1,0 @@
-c:\users\servkey\documents\visual studio 2010\Projects\ConsumirJSON\ConsumirJSON\bin\Debug\ConsumirJSON.exe
-c:\users\servkey\documents\visual studio 2010\Projects\ConsumirJSON\ConsumirJSON\bin\Debug\ConsumirJSON.pdb
-c:\users\servkey\documents\visual studio 2010\Projects\ConsumirJSON\ConsumirJSON\obj\x86\Debug\ConsumirJSON.exe
-c:\users\servkey\documents\visual studio 2010\Projects\ConsumirJSON\ConsumirJSON\obj\x86\Debug\ConsumirJSON.pdb
-c:\users\servkey\documents\visual studio 2010\Projects\ConsumirJSON\ConsumirJSON\bin\Debug\ConsumirJSON.exe.config

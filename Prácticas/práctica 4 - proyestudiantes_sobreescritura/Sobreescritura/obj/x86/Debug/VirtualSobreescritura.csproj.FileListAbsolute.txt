@@ -1,4 +1,0 @@
-C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 4 - proyestudiantes_sobreescritura\Sobreescritura\bin\Debug\ConsoleApplication1.exe
-C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 4 - proyestudiantes_sobreescritura\Sobreescritura\bin\Debug\ConsoleApplication1.pdb
-C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 4 - proyestudiantes_sobreescritura\Sobreescritura\obj\x86\Debug\ConsoleApplication1.exe
-C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\práctica 4 - proyestudiantes_sobreescritura\Sobreescritura\obj\x86\Debug\ConsoleApplication1.pdb

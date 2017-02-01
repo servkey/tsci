@@ -1,4 +1,0 @@
-C:\Users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-C:\Users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-C:\Users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
-C:\Users\servkey\documents\visual studio 2010\Projects\ProyEstudiantes\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
