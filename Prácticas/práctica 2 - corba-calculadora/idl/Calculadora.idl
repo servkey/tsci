@@ -1,0 +1,8 @@
+module CalculadoraApp
+{
+  interface Calculadora
+  {
+  	string saludar();
+	long sumar(in long x,in long y);
+  };
+};
