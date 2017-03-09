@@ -12,15 +12,16 @@ class Server
                {
                   DatagramPacket paqueteRecibido = new DatagramPacket(datosRecibidos, datosRecibidos.length);
                   serverSocket.receive(paqueteRecibido);
-                  String mensaje = new String(paqueteRecibido.getData());
-                  System.out.println("Recibido del cliente: " + mensaje);
+                  String mensaje = new String(paqueteRecibido.getData(), 0, paqueteRecibido.getLength());
+                  System.out.println("Recibido del cliente: " + mensaje.toString());
                   InetAddress IPAddress = paqueteRecibido.getAddress();
                   int puerto = paqueteRecibido.getPort();
-		  String mensajeModificado = " [modificado]";
-
+		
+		  String m = " *modificado*";
+		  String mensajeModificado = mensaje.concat(m);
                   datosEnviados = mensajeModificado.getBytes();
 
-                  System.out.println("Enviando desde el server: " + mensajeModificado );
+                  System.out.println("Enviando desde el server: " + mensajeModificado);
 
                   DatagramPacket enviarPaquete =
                   new DatagramPacket(datosEnviados, datosEnviados.length, IPAddress, puerto);
