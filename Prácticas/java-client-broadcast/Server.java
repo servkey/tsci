@@ -21,7 +21,7 @@ class Server
 		  String mensajeModificado = mensaje.concat(m);
                   datosEnviados = mensajeModificado.getBytes();
 
-                  System.out.println("Enviando desde el server: " + mensajeModificado);
+                  System.out.println("Enviando desde el server a la IP:" + IPAddress.getHostAddress() + " al puerto: " + puerto + ", Mensaje: " + mensajeModificado);
 
                   DatagramPacket enviarPaquete =
                   new DatagramPacket(datosEnviados, datosEnviados.length, IPAddress, puerto);
