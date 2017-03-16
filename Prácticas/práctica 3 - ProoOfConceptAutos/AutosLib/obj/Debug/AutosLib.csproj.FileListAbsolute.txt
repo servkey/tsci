@@ -1,0 +1,4 @@
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\práctica 3 - ProoOfConceptAutos\AutosLib\bin\Debug\AutosLib.dll
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\práctica 3 - ProoOfConceptAutos\AutosLib\bin\Debug\AutosLib.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\práctica 3 - ProoOfConceptAutos\AutosLib\obj\Debug\AutosLib.dll
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\práctica 3 - ProoOfConceptAutos\AutosLib\obj\Debug\AutosLib.pdb

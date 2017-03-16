@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ProoOfConceptAutos.Repositorios
 {
-    class ClienteRepository
+    public class ClienteRepository
     {
     }
 }

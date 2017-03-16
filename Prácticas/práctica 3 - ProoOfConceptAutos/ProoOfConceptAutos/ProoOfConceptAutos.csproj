@@ -64,6 +64,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\AutoRepository.cs" />
     <Compile Include="Repositorios\ClienteRepository.cs" />
+    <Compile Include="Repositorios\IRepository.cs" />
     <Compile Include="Repositorios\VentaRepository.cs" />
     <EmbeddedResource Include="FrmAutos.resx">
       <DependentUpon>FrmAutos.cs</DependentUpon>

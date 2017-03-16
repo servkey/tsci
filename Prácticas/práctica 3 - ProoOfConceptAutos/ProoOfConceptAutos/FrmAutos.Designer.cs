@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPrincipal = new System.Windows.Forms.TabControl();
             this.tbRegistro = new System.Windows.Forms.TabPage();
-            this.tbConsulta = new System.Windows.Forms.TabPage();
             this.lblAnio = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblModelo = new System.Windows.Forms.Label();
@@ -38,19 +37,31 @@
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
+            this.tbConsulta = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtAnioConsulta = new System.Windows.Forms.TextBox();
+            this.txtMarcaConsulta = new System.Windows.Forms.TextBox();
+            this.cmbClave = new System.Windows.Forms.ComboBox();
+            this.txtModeloConsulta = new System.Windows.Forms.TextBox();
+            this.lblClave = new System.Windows.Forms.Label();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.tabPrincipal.SuspendLayout();
             this.tbRegistro.SuspendLayout();
+            this.tbConsulta.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabPrincipal
             // 
-            this.tabControl1.Controls.Add(this.tbRegistro);
-            this.tabControl1.Controls.Add(this.tbConsulta);
-            this.tabControl1.Location = new System.Drawing.Point(12, 24);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(305, 234);
-            this.tabControl1.TabIndex = 7;
+            this.tabPrincipal.Controls.Add(this.tbRegistro);
+            this.tabPrincipal.Controls.Add(this.tbConsulta);
+            this.tabPrincipal.Location = new System.Drawing.Point(12, 24);
+            this.tabPrincipal.Name = "tabPrincipal";
+            this.tabPrincipal.SelectedIndex = 0;
+            this.tabPrincipal.Size = new System.Drawing.Size(305, 234);
+            this.tabPrincipal.TabIndex = 7;
+            this.tabPrincipal.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabPrincipal_Selected);
             // 
             // tbRegistro
             // 
@@ -68,16 +79,6 @@
             this.tbRegistro.TabIndex = 0;
             this.tbRegistro.Text = "Registro";
             this.tbRegistro.UseVisualStyleBackColor = true;
-            // 
-            // tbConsulta
-            // 
-            this.tbConsulta.Location = new System.Drawing.Point(4, 22);
-            this.tbConsulta.Name = "tbConsulta";
-            this.tbConsulta.Padding = new System.Windows.Forms.Padding(3);
-            this.tbConsulta.Size = new System.Drawing.Size(297, 208);
-            this.tbConsulta.TabIndex = 1;
-            this.tbConsulta.Text = "Consulta";
-            this.tbConsulta.UseVisualStyleBackColor = true;
             // 
             // lblAnio
             // 
@@ -137,26 +138,123 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // tbConsulta
+            // 
+            this.tbConsulta.Controls.Add(this.btnActualizar);
+            this.tbConsulta.Controls.Add(this.lblClave);
+            this.tbConsulta.Controls.Add(this.cmbClave);
+            this.tbConsulta.Controls.Add(this.label1);
+            this.tbConsulta.Controls.Add(this.label2);
+            this.tbConsulta.Controls.Add(this.label3);
+            this.tbConsulta.Controls.Add(this.txtAnioConsulta);
+            this.tbConsulta.Controls.Add(this.txtMarcaConsulta);
+            this.tbConsulta.Controls.Add(this.txtModeloConsulta);
+            this.tbConsulta.Location = new System.Drawing.Point(4, 22);
+            this.tbConsulta.Name = "tbConsulta";
+            this.tbConsulta.Padding = new System.Windows.Forms.Padding(3);
+            this.tbConsulta.Size = new System.Drawing.Size(297, 208);
+            this.tbConsulta.TabIndex = 1;
+            this.tbConsulta.Text = "Consulta";
+            this.tbConsulta.UseVisualStyleBackColor = true;
+            this.tbConsulta.Click += new System.EventHandler(this.tbConsulta_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(68, 141);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Año";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(57, 96);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Marca";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(52, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Modelo";
+            // 
+            // txtAnioConsulta
+            // 
+            this.txtAnioConsulta.Location = new System.Drawing.Point(145, 138);
+            this.txtAnioConsulta.Name = "txtAnioConsulta";
+            this.txtAnioConsulta.Size = new System.Drawing.Size(100, 20);
+            this.txtAnioConsulta.TabIndex = 16;
+            // 
+            // txtMarcaConsulta
+            // 
+            this.txtMarcaConsulta.Location = new System.Drawing.Point(145, 96);
+            this.txtMarcaConsulta.Name = "txtMarcaConsulta";
+            this.txtMarcaConsulta.Size = new System.Drawing.Size(100, 20);
+            this.txtMarcaConsulta.TabIndex = 15;
+            // 
+            // cmbClave
+            // 
+            this.cmbClave.FormattingEnabled = true;
+            this.cmbClave.Location = new System.Drawing.Point(145, 18);
+            this.cmbClave.Name = "cmbClave";
+            this.cmbClave.Size = new System.Drawing.Size(100, 21);
+            this.cmbClave.TabIndex = 20;
+            // 
+            // txtModeloConsulta
+            // 
+            this.txtModeloConsulta.Location = new System.Drawing.Point(145, 53);
+            this.txtModeloConsulta.Name = "txtModeloConsulta";
+            this.txtModeloConsulta.Size = new System.Drawing.Size(100, 20);
+            this.txtModeloConsulta.TabIndex = 14;
+            // 
+            // lblClave
+            // 
+            this.lblClave.AutoSize = true;
+            this.lblClave.Location = new System.Drawing.Point(59, 21);
+            this.lblClave.Name = "lblClave";
+            this.lblClave.Size = new System.Drawing.Size(34, 13);
+            this.lblClave.TabIndex = 21;
+            this.lblClave.Text = "Clave";
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(103, 179);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 22;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
             // FrmAutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(333, 270);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabPrincipal);
             this.MaximizeBox = false;
             this.Name = "FrmAutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de autos";
-            this.tabControl1.ResumeLayout(false);
+            this.tabPrincipal.ResumeLayout(false);
             this.tbRegistro.ResumeLayout(false);
             this.tbRegistro.PerformLayout();
+            this.tbConsulta.ResumeLayout(false);
+            this.tbConsulta.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabPrincipal;
         private System.Windows.Forms.TabPage tbRegistro;
         private System.Windows.Forms.Label lblAnio;
         private System.Windows.Forms.Label lblMarca;
@@ -166,6 +264,15 @@
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TabPage tbConsulta;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Label lblClave;
+        private System.Windows.Forms.ComboBox cmbClave;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtAnioConsulta;
+        private System.Windows.Forms.TextBox txtMarcaConsulta;
+        private System.Windows.Forms.TextBox txtModeloConsulta;
 
     }
 }
