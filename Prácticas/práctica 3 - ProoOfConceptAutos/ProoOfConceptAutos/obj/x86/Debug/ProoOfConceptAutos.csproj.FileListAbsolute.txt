@@ -1,0 +1,8 @@
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\ProoOfConceptAutos\ProoOfConceptAutos\bin\Debug\ProoOfConceptAutos.exe
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\ProoOfConceptAutos\ProoOfConceptAutos\bin\Debug\ProoOfConceptAutos.pdb
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\ProoOfConceptAutos\ProoOfConceptAutos\obj\x86\Debug\ProoOfConceptAutos.FrmAutos.resources
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\ProoOfConceptAutos\ProoOfConceptAutos\obj\x86\Debug\ProoOfConceptAutos.Properties.Resources.resources
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\ProoOfConceptAutos\ProoOfConceptAutos\obj\x86\Debug\ProoOfConceptAutos.csproj.GenerateResource.Cache
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\ProoOfConceptAutos\ProoOfConceptAutos\obj\x86\Debug\ProoOfConceptAutos.exe
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\ProoOfConceptAutos\ProoOfConceptAutos\obj\x86\Debug\ProoOfConceptAutos.pdb
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\ProoOfConceptAutos\ProoOfConceptAutos\bin\Debug\ProoOfConceptAutos.exe.config

@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TSCIModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="TSCIModelStoreContainer">
+          <EntitySet Name="TblAutos" EntityType="TSCIModel.Store.TblAutos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TblClientes" EntityType="TSCIModel.Store.TblClientes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TblVentas" EntityType="TSCIModel.Store.TblVentas" store:Type="Tables" store:Schema="dbo" store:Name="TblVentas">
+            <DefiningQuery>SELECT 
+      [TblVentas].[IdCliente] AS [IdCliente], 
+      [TblVentas].[IdAuto] AS [IdAuto], 
+      [TblVentas].[Monto] AS [Monto]
+      FROM [dbo].[TblVentas] AS [TblVentas]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_TblVentas_TblAutos" Association="TSCIModel.Store.FK_TblVentas_TblAutos">
+            <End Role="TblAutos" EntitySet="TblAutos" />
+            <End Role="TblVentas" EntitySet="TblVentas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblVentas_TblClientes" Association="TSCIModel.Store.FK_TblVentas_TblClientes">
+            <End Role="TblClientes" EntitySet="TblClientes" />
+            <End Role="TblVentas" EntitySet="TblVentas" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="TblAutos">
+          <Key>
+            <PropertyRef Name="IdAuto" />
+          </Key>
+          <Property Name="IdAuto" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Modelo" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Marca" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="Anio" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TblClientes">
+          <Key>
+            <PropertyRef Name="IdCliente" />
+          </Key>
+          <Property Name="IdCliente" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="AppPaterno" Type="nchar" Nullable="false" MaxLength="20" />
+          <Property Name="AppMaterno" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'TSCI.dbo.TblVentas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="TblVentas">
+          <Key>
+            <PropertyRef Name="IdCliente" />
+            <PropertyRef Name="IdAuto" />
+            <PropertyRef Name="Monto" />
+          </Key>
+          <Property Name="IdCliente" Type="int" Nullable="false" />
+          <Property Name="IdAuto" Type="int" Nullable="false" />
+          <Property Name="Monto" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_TblVentas_TblAutos">
+          <End Role="TblAutos" Type="TSCIModel.Store.TblAutos" Multiplicity="1" />
+          <End Role="TblVentas" Type="TSCIModel.Store.TblVentas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblAutos">
+              <PropertyRef Name="IdAuto" />
+            </Principal>
+            <Dependent Role="TblVentas">
+              <PropertyRef Name="IdAuto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblVentas_TblClientes">
+          <End Role="TblClientes" Type="TSCIModel.Store.TblClientes" Multiplicity="1" />
+          <End Role="TblVentas" Type="TSCIModel.Store.TblVentas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblClientes">
+              <PropertyRef Name="IdCliente" />
+            </Principal>
+            <Dependent Role="TblVentas">
+              <PropertyRef Name="IdCliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TSCIModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="TSCIEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TblAutos" EntityType="TSCIModel.TblAutos" />
+          <EntitySet Name="TblClientes" EntityType="TSCIModel.TblClientes" />
+          <EntitySet Name="TblVentas" EntityType="TSCIModel.TblVentas" />
+          <AssociationSet Name="FK_TblVentas_TblAutos" Association="TSCIModel.FK_TblVentas_TblAutos">
+            <End Role="TblAutos" EntitySet="TblAutos" />
+            <End Role="TblVentas" EntitySet="TblVentas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblVentas_TblClientes" Association="TSCIModel.FK_TblVentas_TblClientes">
+            <End Role="TblClientes" EntitySet="TblClientes" />
+            <End Role="TblVentas" EntitySet="TblVentas" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="TblAutos">
+          <Key>
+            <PropertyRef Name="IdAuto" />
+          </Key>
+          <Property Name="IdAuto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Modelo" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Marca" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Anio" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TblVentas" Relationship="TSCIModel.FK_TblVentas_TblAutos" FromRole="TblAutos" ToRole="TblVentas" />
+        </EntityType>
+        <EntityType Name="TblClientes">
+          <Key>
+            <PropertyRef Name="IdCliente" />
+          </Key>
+          <Property Name="IdCliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="AppPaterno" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+          <Property Name="AppMaterno" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="TblVentas" Relationship="TSCIModel.FK_TblVentas_TblClientes" FromRole="TblClientes" ToRole="TblVentas" />
+        </EntityType>
+        <EntityType Name="TblVentas">
+          <Key>
+            <PropertyRef Name="IdCliente" />
+            <PropertyRef Name="IdAuto" />
+            <PropertyRef Name="Monto" />
+          </Key>
+          <Property Name="IdCliente" Type="Int32" Nullable="false" />
+          <Property Name="IdAuto" Type="Int32" Nullable="false" />
+          <Property Name="Monto" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="TblAutos" Relationship="TSCIModel.FK_TblVentas_TblAutos" FromRole="TblVentas" ToRole="TblAutos" />
+          <NavigationProperty Name="TblClientes" Relationship="TSCIModel.FK_TblVentas_TblClientes" FromRole="TblVentas" ToRole="TblClientes" />
+        </EntityType>
+        <Association Name="FK_TblVentas_TblAutos">
+          <End Role="TblAutos" Type="TSCIModel.TblAutos" Multiplicity="1" />
+          <End Role="TblVentas" Type="TSCIModel.TblVentas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblAutos">
+              <PropertyRef Name="IdAuto" />
+            </Principal>
+            <Dependent Role="TblVentas">
+              <PropertyRef Name="IdAuto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblVentas_TblClientes">
+          <End Role="TblClientes" Type="TSCIModel.TblClientes" Multiplicity="1" />
+          <End Role="TblVentas" Type="TSCIModel.TblVentas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblClientes">
+              <PropertyRef Name="IdCliente" />
+            </Principal>
+            <Dependent Role="TblVentas">
+              <PropertyRef Name="IdCliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TSCIModelStoreContainer" CdmEntityContainer="TSCIEntities">
+          <EntitySetMapping Name="TblAutos">
+            <EntityTypeMapping TypeName="TSCIModel.TblAutos">
+              <MappingFragment StoreEntitySet="TblAutos">
+                <ScalarProperty Name="IdAuto" ColumnName="IdAuto" />
+                <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+                <ScalarProperty Name="Marca" ColumnName="Marca" />
+                <ScalarProperty Name="Anio" ColumnName="Anio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblClientes">
+            <EntityTypeMapping TypeName="TSCIModel.TblClientes">
+              <MappingFragment StoreEntitySet="TblClientes">
+                <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="AppPaterno" ColumnName="AppPaterno" />
+                <ScalarProperty Name="AppMaterno" ColumnName="AppMaterno" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblVentas">
+            <EntityTypeMapping TypeName="TSCIModel.TblVentas">
+              <MappingFragment StoreEntitySet="TblVentas">
+                <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+                <ScalarProperty Name="IdAuto" ColumnName="IdAuto" />
+                <ScalarProperty Name="Monto" ColumnName="Monto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="TSCI">
+        <EntityTypeShape EntityType="TSCIModel.TblAutos" Width="1.5" PointX="0.75" PointY="0.875" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSCIModel.TblClientes" Width="1.5" PointX="0.75" PointY="3.875" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="TSCIModel.TblVentas" Width="1.5" PointX="3" PointY="0.875" Height="1.9802864583333326" IsExpanded="true" />
+        <AssociationConnector Association="TSCIModel.FK_TblVentas_TblAutos" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="1.8651432291666663" />
+          <ConnectorPoint PointX="3" PointY="1.8651432291666663" />
+        </AssociationConnector>
+        <AssociationConnector Association="TSCIModel.FK_TblVentas_TblClientes" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="4.8651432291666667" />
+          <ConnectorPoint PointX="3.75" PointY="4.8651432291666667" />
+          <ConnectorPoint PointX="3.75" PointY="2.8552864583333326" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
