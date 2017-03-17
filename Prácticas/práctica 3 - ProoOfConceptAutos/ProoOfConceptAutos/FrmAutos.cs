@@ -9,10 +9,13 @@ using System.Windows.Forms;
 using AutosLib.Domain;
 namespace ProoOfConceptAutos
 {
-    public partial class FrmAutos : Form
+    public partial class FrmAutos : Base.FrmBase
     {
-        public FrmAutos()
+        Repositorios.AutoRepository autoRepository = new Repositorios.AutoRepository();
+
+        public FrmAutos():base()
         {
+           
             InitializeComponent();
         }
 
@@ -20,7 +23,6 @@ namespace ProoOfConceptAutos
         {
             try
             {
-                Repositorios.AutoRepository autoRepository = new Repositorios.AutoRepository();
                 Auto auto = new Auto()
                 {
                     Marca = txtMarca.Text,
@@ -29,8 +31,8 @@ namespace ProoOfConceptAutos
                 };
 
                 autoRepository.Add(auto);
-
-                MessageBox.Show(this, "Guardando....", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Limpiar();
+                MessageBox.Show(this, "El auto fue registrado exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
             {
@@ -51,11 +53,31 @@ namespace ProoOfConceptAutos
         {
             if (e.TabPageIndex == 1)
             {
-                Model.TSCIEntities db = new Model.TSCIEntities();
-                cmbClave.DataSource = db.TblAutos;
+
+                cmbClave.DataSource = autoRepository.GetAll();
                 cmbClave.ValueMember = "IdAuto";
                 cmbClave.DisplayMember = "Marca";
             }
+        }
+
+        private void FrmAutos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbClave_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Auto auto = (Auto) cmbClave.SelectedItem;
+            auto = autoRepository.GetById(auto);
+            txtMarcaConsulta.Text = auto.Marca;
+            txtModeloConsulta.Text = auto.Modelo;
+            txtAnioConsulta.Text = auto.Anio.ToString();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            Auto auto = (Auto)cmbClave.SelectedItem;
+            autoRepository.Delete(auto);
         }
     }
 }

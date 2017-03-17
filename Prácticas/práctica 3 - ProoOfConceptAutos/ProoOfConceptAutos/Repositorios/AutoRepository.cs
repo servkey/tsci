@@ -42,7 +42,21 @@ namespace ProoOfConceptAutos.Repositorios
 
         public List<Auto> GetAll()
         {
-            return null;
+            var x = from a in db.TblAutos
+                    select new Auto{
+                      IdAuto = a.IdAuto,
+                      Marca = a.Marca,
+                      Anio = a.Anio,
+                      Modelo = a.Modelo
+                    };
+           
+             return x.ToList<Auto>();
+        }
+
+        public Auto GetById(Auto auto)
+        {
+            Model.TblAutos autoTbl = db.TblAutos.Where(x => x.IdAuto == auto.IdAuto).Single();
+            return new Auto() { Marca = autoTbl.Marca, Modelo = autoTbl.Modelo, IdAuto = autoTbl.IdAuto, Anio = autoTbl.Anio };
         }
 
 

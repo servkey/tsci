@@ -33,20 +33,21 @@
             this.lblAnio = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblModelo = new System.Windows.Forms.Label();
-            this.txtAnio = new System.Windows.Forms.TextBox();
+            this.txtAnio = new ProoOfConceptAutos.Base.CustomTextBox();
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.tbConsulta = new System.Windows.Forms.TabPage();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.lblClave = new System.Windows.Forms.Label();
+            this.cmbClave = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtAnioConsulta = new System.Windows.Forms.TextBox();
             this.txtMarcaConsulta = new System.Windows.Forms.TextBox();
-            this.cmbClave = new System.Windows.Forms.ComboBox();
             this.txtModeloConsulta = new System.Windows.Forms.TextBox();
-            this.lblClave = new System.Windows.Forms.Label();
-            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.tabPrincipal.SuspendLayout();
             this.tbRegistro.SuspendLayout();
             this.tbConsulta.SuspendLayout();
@@ -110,7 +111,9 @@
             // txtAnio
             // 
             this.txtAnio.Location = new System.Drawing.Point(146, 116);
+            this.txtAnio.Mask = null;
             this.txtAnio.Name = "txtAnio";
+            this.txtAnio.Required = false;
             this.txtAnio.Size = new System.Drawing.Size(100, 20);
             this.txtAnio.TabIndex = 2;
             // 
@@ -140,6 +143,7 @@
             // 
             // tbConsulta
             // 
+            this.tbConsulta.Controls.Add(this.btnEliminar);
             this.tbConsulta.Controls.Add(this.btnActualizar);
             this.tbConsulta.Controls.Add(this.lblClave);
             this.tbConsulta.Controls.Add(this.cmbClave);
@@ -154,9 +158,38 @@
             this.tbConsulta.Padding = new System.Windows.Forms.Padding(3);
             this.tbConsulta.Size = new System.Drawing.Size(297, 208);
             this.tbConsulta.TabIndex = 1;
-            this.tbConsulta.Text = "Consulta";
+            this.tbConsulta.Text = "Actualización";
             this.tbConsulta.UseVisualStyleBackColor = true;
             this.tbConsulta.Click += new System.EventHandler(this.tbConsulta_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(71, 179);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 22;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // lblClave
+            // 
+            this.lblClave.AutoSize = true;
+            this.lblClave.Location = new System.Drawing.Point(59, 21);
+            this.lblClave.Name = "lblClave";
+            this.lblClave.Size = new System.Drawing.Size(34, 13);
+            this.lblClave.TabIndex = 21;
+            this.lblClave.Text = "Clave";
+            // 
+            // cmbClave
+            // 
+            this.cmbClave.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbClave.FormattingEnabled = true;
+            this.cmbClave.Location = new System.Drawing.Point(145, 18);
+            this.cmbClave.Name = "cmbClave";
+            this.cmbClave.Size = new System.Drawing.Size(100, 21);
+            this.cmbClave.TabIndex = 20;
+            this.cmbClave.SelectedIndexChanged += new System.EventHandler(this.cmbClave_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -199,14 +232,6 @@
             this.txtMarcaConsulta.Size = new System.Drawing.Size(100, 20);
             this.txtMarcaConsulta.TabIndex = 15;
             // 
-            // cmbClave
-            // 
-            this.cmbClave.FormattingEnabled = true;
-            this.cmbClave.Location = new System.Drawing.Point(145, 18);
-            this.cmbClave.Name = "cmbClave";
-            this.cmbClave.Size = new System.Drawing.Size(100, 21);
-            this.cmbClave.TabIndex = 20;
-            // 
             // txtModeloConsulta
             // 
             this.txtModeloConsulta.Location = new System.Drawing.Point(145, 53);
@@ -214,24 +239,15 @@
             this.txtModeloConsulta.Size = new System.Drawing.Size(100, 20);
             this.txtModeloConsulta.TabIndex = 14;
             // 
-            // lblClave
+            // btnEliminar
             // 
-            this.lblClave.AutoSize = true;
-            this.lblClave.Location = new System.Drawing.Point(59, 21);
-            this.lblClave.Name = "lblClave";
-            this.lblClave.Size = new System.Drawing.Size(34, 13);
-            this.lblClave.TabIndex = 21;
-            this.lblClave.Text = "Clave";
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Location = new System.Drawing.Point(103, 179);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 22;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            this.btnEliminar.Location = new System.Drawing.Point(152, 179);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 23;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // FrmAutos
             // 
@@ -243,6 +259,7 @@
             this.Name = "FrmAutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de autos";
+            this.Load += new System.EventHandler(this.FrmAutos_Load);
             this.tabPrincipal.ResumeLayout(false);
             this.tbRegistro.ResumeLayout(false);
             this.tbRegistro.PerformLayout();
@@ -259,7 +276,7 @@
         private System.Windows.Forms.Label lblAnio;
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label lblModelo;
-        private System.Windows.Forms.TextBox txtAnio;
+        private Base.CustomTextBox txtAnio;
         private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.Button btnGuardar;
@@ -273,6 +290,7 @@
         private System.Windows.Forms.TextBox txtAnioConsulta;
         private System.Windows.Forms.TextBox txtMarcaConsulta;
         private System.Windows.Forms.TextBox txtModeloConsulta;
+        private System.Windows.Forms.Button btnEliminar;
 
     }
 }

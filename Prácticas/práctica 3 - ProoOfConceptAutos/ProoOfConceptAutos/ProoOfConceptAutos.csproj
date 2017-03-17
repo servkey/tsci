@@ -49,6 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\CustomTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAutos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +75,9 @@
     <Compile Include="Repositorios\ClienteRepository.cs" />
     <Compile Include="Repositorios\IRepository.cs" />
     <Compile Include="Repositorios\VentaRepository.cs" />
+    <EmbeddedResource Include="Base\FrmBase.resx">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAutos.resx">
       <DependentUpon>FrmAutos.cs</DependentUpon>
     </EmbeddedResource>
