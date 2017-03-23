@@ -1,0 +1,4 @@
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\PracticaCSharpTSCI\PracticaCSharpTSCI\bin\Debug\PracticaCSharpTSCI.exe
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\PracticaCSharpTSCI\PracticaCSharpTSCI\bin\Debug\PracticaCSharpTSCI.pdb
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\PracticaCSharpTSCI\PracticaCSharpTSCI\obj\x86\Debug\PracticaCSharpTSCI.exe
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\PracticaCSharpTSCI\PracticaCSharpTSCI\obj\x86\Debug\PracticaCSharpTSCI.pdb

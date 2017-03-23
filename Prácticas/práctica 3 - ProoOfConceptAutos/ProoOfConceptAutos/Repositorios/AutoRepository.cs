@@ -6,6 +6,9 @@ using AutosLib.Domain;
 
 namespace ProoOfConceptAutos.Repositorios
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class AutoRepository:IRepository<Auto>
     {
         private Model.TSCIEntities db = new Model.TSCIEntities();
@@ -40,6 +43,10 @@ namespace ProoOfConceptAutos.Repositorios
             db.SaveChanges();            
         }
 
+        /// <summary>
+        /// El....
+        /// </summary>
+        /// <returns></returns>
         public List<Auto> GetAll()
         {
             var x = from a in db.TblAutos

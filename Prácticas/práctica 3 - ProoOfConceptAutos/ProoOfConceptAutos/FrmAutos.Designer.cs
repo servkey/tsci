@@ -34,10 +34,11 @@
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblModelo = new System.Windows.Forms.Label();
             this.txtAnio = new ProoOfConceptAutos.Base.CustomTextBox();
-            this.txtMarca = new System.Windows.Forms.TextBox();
-            this.txtModelo = new System.Windows.Forms.TextBox();
+            this.txtMarca = new ProoOfConceptAutos.Base.CustomTextBox();
+            this.txtModelo = new ProoOfConceptAutos.Base.CustomTextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.tbConsulta = new System.Windows.Forms.TabPage();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.lblClave = new System.Windows.Forms.Label();
             this.cmbClave = new System.Windows.Forms.ComboBox();
@@ -47,7 +48,6 @@
             this.txtAnioConsulta = new System.Windows.Forms.TextBox();
             this.txtMarcaConsulta = new System.Windows.Forms.TextBox();
             this.txtModeloConsulta = new System.Windows.Forms.TextBox();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.tabPrincipal.SuspendLayout();
             this.tbRegistro.SuspendLayout();
             this.tbConsulta.SuspendLayout();
@@ -110,8 +110,8 @@
             // 
             // txtAnio
             // 
-            this.txtAnio.Location = new System.Drawing.Point(146, 116);
-            this.txtAnio.Mask = null;
+            this.txtAnio.Location = new System.Drawing.Point(146, 119);
+            this.txtAnio.Mask = "s[5]";
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Required = false;
             this.txtAnio.Size = new System.Drawing.Size(100, 20);
@@ -161,6 +161,16 @@
             this.tbConsulta.Text = "Actualización";
             this.tbConsulta.UseVisualStyleBackColor = true;
             this.tbConsulta.Click += new System.EventHandler(this.tbConsulta_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(152, 179);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 23;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnActualizar
             // 
@@ -238,16 +248,6 @@
             this.txtModeloConsulta.Name = "txtModeloConsulta";
             this.txtModeloConsulta.Size = new System.Drawing.Size(100, 20);
             this.txtModeloConsulta.TabIndex = 14;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(152, 179);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 23;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // FrmAutos
             // 

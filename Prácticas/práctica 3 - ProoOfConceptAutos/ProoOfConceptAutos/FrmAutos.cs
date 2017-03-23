@@ -23,16 +23,20 @@ namespace ProoOfConceptAutos
         {
             try
             {
-                Auto auto = new Auto()
+                List<Base.CustomTextBox> controls = Validar().ToList<Base.CustomTextBox>();
+                if (controls == null)
                 {
-                    Marca = txtMarca.Text,
-                    Modelo = txtModelo.Text,
-                    Anio = Convert.ToInt32(txtAnio.Text)
-                };
+                    Auto auto = new Auto()
+                    {
+                        Marca = txtMarca.Text,
+                        Modelo = txtModelo.Text,
+                        Anio = Convert.ToInt32(txtAnio.Text)
+                    };
 
-                autoRepository.Add(auto);
-                Limpiar();
-                MessageBox.Show(this, "El auto fue registrado exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    autoRepository.Add(auto);
+                    Limpiar();
+                    MessageBox.Show(this, "El auto fue registrado exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch
             {
