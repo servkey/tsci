@@ -13,9 +13,6 @@ namespace ProoOfConceptAutos
         [STAThread]
         static void Main()
         {
-            int[] x = { 1,34,5,7,10};
-            int pares = x.Count(x1 => x1 % 2 == 0);
-            return;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmAutos());

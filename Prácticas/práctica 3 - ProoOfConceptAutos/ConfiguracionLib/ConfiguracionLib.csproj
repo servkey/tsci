@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4E3F0155-DC74-4566-AE8F-F77713914465}</ProjectGuid>
+    <ProjectGuid>{84B89F79-4858-40CE-9E1D-23269A50A507}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AutosLib</RootNamespace>
-    <AssemblyName>AutosLib</AssemblyName>
+    <RootNamespace>ConfiguracionLib</RootNamespace>
+    <AssemblyName>ConfiguracionLib</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,11 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\CampoConfiguracionRepository.cs" />
     <Compile Include="DAO\IRepository.cs" />
-    <Compile Include="Domain\Auto.cs" />
-    <Compile Include="Domain\Cliente.cs" />
+    <Compile Include="Util\Conexion.cs" />
+    <Compile Include="Util\MSSQLConexion.cs" />
+    <Compile Include="GUI\CampoConfiguracion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

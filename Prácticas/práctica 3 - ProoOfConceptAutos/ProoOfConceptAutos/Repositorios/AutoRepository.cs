@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AutosLib.Domain;
-
+using AutosLib.DAO;
 namespace ProoOfConceptAutos.Repositorios
 {
     /// <summary>
