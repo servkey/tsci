@@ -23,8 +23,8 @@ namespace ProoOfConceptAutos
         {
             try
             {
-                List<Base.CustomTextBox> controls = Validar().ToList<Base.CustomTextBox>();
-                if (controls == null)
+                ////List<Base.CustomTextBox> controls = Validar().ToList<Base.CustomTextBox>();
+                //if (contros == null)
                 {
                     Auto auto = new Auto()
                     {
