@@ -1,0 +1,4 @@
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\PracticaCSharpTSCI\Delegados\bin\Debug\Delegados.exe
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\PracticaCSharpTSCI\Delegados\bin\Debug\Delegados.pdb
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\PracticaCSharpTSCI\Delegados\obj\x86\Debug\Delegados.exe
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\PracticaCSharpTSCI\Delegados\obj\x86\Debug\Delegados.pdb

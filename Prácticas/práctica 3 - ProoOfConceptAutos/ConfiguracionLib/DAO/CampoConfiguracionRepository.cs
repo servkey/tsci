@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Data;
 using System.Text;
-using System.Collections.Generic;
 using ConfiguracionLib.DAO;
 using ConfiguracionLib.GUI;
 using ConfiguracionLib.Util;
@@ -19,7 +18,7 @@ namespace ConfiguracionLib.DAO
         {
             bool result = true;
 
-              string insert_sql = String.Format("INSERT INTO [dbo].[Tbl_Estudiantes] ");// ([Nombre], [ApellidoPaterno], [ApellidoMaterno], [Promedio], [Matricula])  VALUES  ('{0}','{1}','{2}','{3}','{4}')", e.Nombre, e.ApellidoPaterno, e.ApellidoMaterno, e.PromedioGeneral, e.Matricula);
+              string insert_sql = String.Format("INSERT INTO [dbo].[Tbl_CamposConfiguraciones] ");// ([Nombre], [ApellidoPaterno], [ApellidoMaterno], [Promedio], [Matricula])  VALUES  ('{0}','{1}','{2}','{3}','{4}')", e.Nombre, e.ApellidoPaterno, e.ApellidoMaterno, e.PromedioGeneral, e.Matricula);
              
                 //string insert_sql = "INSERT INTO [dbo].[Tbl_Estudiantes]  ([Nombre], [ApellidoPaterno], [ApellidoMaterno], [Promedio], [Matricula])  VALUES  ('"+  e.Nombre + " ', '" + e.ApellidoPaterno + "',  '" + e.ApellidoMaterno + "', '" + e.PromedioGeneral + "', '" + e.Matricula + "')";
                 //insert_sql += ";delete from Tbl_Estudiantes;";
@@ -31,7 +30,7 @@ namespace ConfiguracionLib.DAO
         }
 
 
-        public bool Delete(CampoConfiguracion e)
+        public void Delete(CampoConfiguracion e)
         {
 
             bool result = true;
@@ -43,16 +42,15 @@ namespace ConfiguracionLib.DAO
             catch
             {
             }
-            return result;
         }
 
 
         public List<CampoConfiguracion> GetAll()
         {
-            string query = "select * from Tbl_Estudiantes;";
-            DataSet dr = con.Query(query, "Tbl_Estudiantes");
+            string query = "select * from TblCamposConfiguraciones;";
+            DataSet dr = con.Query(query, "TblCamposConfiguraciones");
 
-            List<CampoConfiguracion> estudiantes = dr.Tables[0].Rows.Cast<DataRow>().
+            List<CampoConfiguracion> campos = dr.Tables[0].Rows.Cast<DataRow>().
                         Select(
 
                         x =>
@@ -66,18 +64,18 @@ namespace ConfiguracionLib.DAO
                             Tipo = x[4].ToString(),
                        }
             ).ToList<CampoConfiguracion>();
-            return estudiantes; 
+            return campos; 
         
         }
 
         public CampoConfiguracion GetById(int id)
         {
-            CampoConfiguracion usuario = null;
-            string query = "select * from Tbl_Estudiantes where Id = {0};";
+            CampoConfiguracion campo = null;
+            string query = "select * from TblCamposConfiguraciones where Id = {0};";
             query = String.Format(query, id);
-            DataSet dr = con.Query(query, "Tbl_Estudiantes");
+            DataSet dr = con.Query(query, "TblCamposConfiguraciones");
 
-            usuario = dr.Tables[0].Rows.Cast<DataRow>().
+            campo = dr.Tables[0].Rows.Cast<DataRow>().
                         Select(
                              x =>
 
@@ -90,7 +88,7 @@ namespace ConfiguracionLib.DAO
                             Tipo = x[4].ToString(),
                         }
             ).ToList<CampoConfiguracion>()[0];
-            return usuario;
+            return campo;
         }
 
     }
