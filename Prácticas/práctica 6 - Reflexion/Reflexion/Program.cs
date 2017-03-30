@@ -80,12 +80,24 @@ namespace Reflexion
         static void Main(string[] args)
         {
             //Reflexion
-            Estudiante e = new Estudiante();
-            Type t = e.GetType();
+            //Estudiante e = new Estudiante();
+            Assembly asm = Assembly.LoadFrom(@".\AutosLib.dll");
+
+            Console.WriteLine("Información general del ensamblado");
+            foreach (Type m in asm.GetTypes())
+            {
+                Console.WriteLine("Nombre del tipo: {0}", m.FullName);
             
-            Console.WriteLine("Nombre completo: {0}", t.FullName);
+            }
+
+            Type t = asm.GetType("AutosLib.Domain.Auto");
+
+            Console.WriteLine("********Datos de la clase*****");
+            Console.WriteLine("Nombre de la clase: {0}", t.Name);
+            Console.WriteLine("Nombre completo de la clase: {0}", t.FullName);
             Console.WriteLine("Nombre Tipo Base: {0}" , t.BaseType.Name);
-            Console.WriteLine("Nombre Tipo Base Base: {0}", t.BaseType.BaseType.Name);
+           
+            //Console.WriteLine("Nombre Tipo Base Base: {0}", t.BaseType.BaseType.Name);
 
             Console.WriteLine("********Métodos*****");
                 
