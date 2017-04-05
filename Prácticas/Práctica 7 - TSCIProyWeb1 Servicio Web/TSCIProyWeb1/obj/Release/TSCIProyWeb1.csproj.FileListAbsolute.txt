@@ -1,0 +1,4 @@
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\TSCIProyWeb1\TSCIProyWeb1\bin\TSCIProyWeb1.dll
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\TSCIProyWeb1\TSCIProyWeb1\bin\TSCIProyWeb1.pdb
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\TSCIProyWeb1\TSCIProyWeb1\obj\Release\TSCIProyWeb1.dll
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\TSCIProyWeb1\TSCIProyWeb1\obj\Release\TSCIProyWeb1.pdb

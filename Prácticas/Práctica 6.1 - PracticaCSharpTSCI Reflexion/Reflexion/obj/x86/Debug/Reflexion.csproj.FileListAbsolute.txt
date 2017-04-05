@@ -1,0 +1,4 @@
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\PracticaCSharpTSCI\Reflexion\bin\Debug\Reflexion.exe
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\PracticaCSharpTSCI\Reflexion\bin\Debug\Reflexion.pdb
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\PracticaCSharpTSCI\Reflexion\obj\x86\Debug\Reflexion.exe
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\PracticaCSharpTSCI\Reflexion\obj\x86\Debug\Reflexion.pdb

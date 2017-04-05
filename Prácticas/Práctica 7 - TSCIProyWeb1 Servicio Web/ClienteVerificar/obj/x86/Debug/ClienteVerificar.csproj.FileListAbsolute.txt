@@ -1,0 +1,8 @@
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\TSCIProyWeb1\ClienteVerificar\bin\Debug\ClienteVerificar.exe.config
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\TSCIProyWeb1\ClienteVerificar\bin\Debug\ClienteVerificar.exe
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\TSCIProyWeb1\ClienteVerificar\bin\Debug\ClienteVerificar.pdb
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\TSCIProyWeb1\ClienteVerificar\obj\x86\Debug\ClienteVerificar.Form1.resources
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\TSCIProyWeb1\ClienteVerificar\obj\x86\Debug\ClienteVerificar.Properties.Resources.resources
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\TSCIProyWeb1\ClienteVerificar\obj\x86\Debug\ClienteVerificar.csproj.GenerateResource.Cache
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\TSCIProyWeb1\ClienteVerificar\obj\x86\Debug\ClienteVerificar.exe
+C:\Users\servkey\Desktop\TSCI - Presentación\Proyecto\TSCIProyWeb1\ClienteVerificar\obj\x86\Debug\ClienteVerificar.pdb
