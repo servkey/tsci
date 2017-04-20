@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TSCIModelStoreContainer" CdmEntityContainer="TSCIEntities">
+    <EntitySetMapping Name="TblAutos">
+      <EntityTypeMapping TypeName="TSCIModel.TblAutos">
+        <MappingFragment StoreEntitySet="TblAutos">
+          <ScalarProperty Name="Anio" ColumnName="Anio" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="IdAuto" ColumnName="IdAuto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblClientes">
+      <EntityTypeMapping TypeName="TSCIModel.TblClientes">
+        <MappingFragment StoreEntitySet="TblClientes">
+          <ScalarProperty Name="AppMaterno" ColumnName="AppMaterno" />
+          <ScalarProperty Name="AppPaterno" ColumnName="AppPaterno" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblVentas">
+      <EntityTypeMapping TypeName="TSCIModel.TblVentas">
+        <MappingFragment StoreEntitySet="TblVentas">
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="IdAuto" ColumnName="IdAuto" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99F8930E-E47C-4633-8118-F93DC8C71572}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeneracionCodigoReflexion</RootNamespace>
+    <AssemblyName>GeneracionCodigoReflexion</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityModel\Actor.cs" />
+    <Compile Include="ActivityModel\Base.cs" />
+    <Compile Include="ActivityModel\Element.cs" />
+    <Compile Include="ActivityModel\Enum\ActivityType.cs" />
+    <Compile Include="ActivityModel\Enum\ActivityTypeEnum.cs" />
+    <Compile Include="ActivityModel\Enum\Afectacion.cs" />
+    <Compile Include="ActivityModel\Enum\Balance.cs" />
+    <Compile Include="ActivityModel\Enum\Competition.cs" />
+    <Compile Include="ActivityModel\Enum\Contribution.cs" />
+    <Compile Include="ActivityModel\Enum\DirectOposition.cs" />
+    <Compile Include="ActivityModel\Enum\GoalType.cs" />
+    <Compile Include="ActivityModel\Enum\GoalVariable.cs" />
+    <Compile Include="ActivityModel\Enum\Impact.cs" />
+    <Compile Include="ActivityModel\Enum\IndirectOposition.cs" />
+    <Compile Include="ActivityModel\Enum\ResultInteraction.cs" />
+    <Compile Include="ActivityModel\Enum\ResultType.cs" />
+    <Compile Include="ActivityModel\Util\Orientacion.cs" />
+    <Compile Include="ActivityModel\Util\Signo.cs" />
+    <Compile Include="ActivityModel\Util\TipoComportamiento.cs" />
+    <Compile Include="ActivityModel\Util\TipoVariable.cs" />
+    <Compile Include="ActivityModel\Util\Variable.cs" />
+    <Compile Include="GeneracionCodigo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TSCI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TSCI.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="TSCI.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TSCI.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

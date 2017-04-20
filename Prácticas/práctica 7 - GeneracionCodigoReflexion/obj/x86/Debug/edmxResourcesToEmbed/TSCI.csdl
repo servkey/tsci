@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TSCIModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="TSCIEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TblAutos" EntityType="TSCIModel.TblAutos" />
+    <EntitySet Name="TblClientes" EntityType="TSCIModel.TblClientes" />
+    <EntitySet Name="TblVentas" EntityType="TSCIModel.TblVentas" />
+    <AssociationSet Name="FK_TblVentas_TblAutos" Association="TSCIModel.FK_TblVentas_TblAutos">
+      <End Role="TblAutos" EntitySet="TblAutos" />
+      <End Role="TblVentas" EntitySet="TblVentas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblVentas_TblClientes" Association="TSCIModel.FK_TblVentas_TblClientes">
+      <End Role="TblClientes" EntitySet="TblClientes" />
+      <End Role="TblVentas" EntitySet="TblVentas" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="TblAutos">
+    <Key>
+      <PropertyRef Name="IdAuto" />
+    </Key>
+    <Property Type="Int32" Name="IdAuto" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Modelo" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Marca" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Anio" Nullable="false" />
+    <NavigationProperty Name="TblVentas" Relationship="TSCIModel.FK_TblVentas_TblAutos" FromRole="TblAutos" ToRole="TblVentas" />
+  </EntityType>
+  <EntityType Name="TblClientes">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Type="Int32" Name="IdCliente" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AppPaterno" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="AppMaterno" MaxLength="20" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="TblVentas" Relationship="TSCIModel.FK_TblVentas_TblClientes" FromRole="TblClientes" ToRole="TblVentas" />
+  </EntityType>
+  <EntityType Name="TblVentas">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+      <PropertyRef Name="IdAuto" />
+    </Key>
+    <Property Type="Int32" Name="IdCliente" Nullable="false" />
+    <Property Type="Int32" Name="IdAuto" Nullable="false" />
+    <Property Type="String" Name="Monto" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TblAutos" Relationship="TSCIModel.FK_TblVentas_TblAutos" FromRole="TblVentas" ToRole="TblAutos" />
+    <NavigationProperty Name="TblClientes" Relationship="TSCIModel.FK_TblVentas_TblClientes" FromRole="TblVentas" ToRole="TblClientes" />
+  </EntityType>
+  <Association Name="FK_TblVentas_TblAutos">
+    <End Type="TSCIModel.TblAutos" Role="TblAutos" Multiplicity="1" />
+    <End Type="TSCIModel.TblVentas" Role="TblVentas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblAutos">
+        <PropertyRef Name="IdAuto" />
+      </Principal>
+      <Dependent Role="TblVentas">
+        <PropertyRef Name="IdAuto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblVentas_TblClientes">
+    <End Type="TSCIModel.TblClientes" Role="TblClientes" Multiplicity="1" />
+    <End Type="TSCIModel.TblVentas" Role="TblVentas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblClientes">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="TblVentas">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
