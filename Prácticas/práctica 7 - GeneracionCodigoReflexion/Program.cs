@@ -99,7 +99,7 @@ namespace GeneracionCodigoReflexion
 
             Operaciones.ActivityModel.Actor actor = new Operaciones.ActivityModel.Actor{ 
                 Name = "Jugador", 
-                Id = "IdJugador"            
+                          
             };
             actor.Attributes.Add(new Operaciones.ActivityModel.Util.Variable{
                 Name = "nombre",
