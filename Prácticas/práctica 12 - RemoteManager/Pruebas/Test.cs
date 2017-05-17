@@ -21,7 +21,7 @@ namespace Pruebas
         public Test()
         {
             InitializeComponent();
-            w = new WQLUtil.Util.Window.WindowManager(WinEventProc);
+          //  w = new WQLUtil.Util.Window.WindowManager(WinEventProc);
             m = new WQLUtil.Util.Mouse.MouseManager();
                  
             //m.Hook.OnMouseActivity += new MouseEventHandler(MouseMoved);
