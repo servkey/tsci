@@ -1,0 +1,6 @@
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\TestNF\bin\Debug\TestNF.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\TestNF\bin\Debug\TestNF.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\TestNF\obj\x86\Debug\TestNF.Properties.Resources.resources
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\TestNF\obj\x86\Debug\TestNF.csproj.GenerateResource.Cache
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\TestNF\obj\x86\Debug\TestNF.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\TestNF\obj\x86\Debug\TestNF.pdb

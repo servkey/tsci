@@ -1,0 +1,26 @@
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\Pruebas\bin\Debug\Pruebas.exe.config
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\Pruebas\bin\Debug\Pruebas.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\Pruebas\bin\Debug\Pruebas.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\Pruebas\bin\Debug\WQLUtil.dll
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\Pruebas\bin\Debug\WQLUtil.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\Pruebas\obj\x86\Debug\Pruebas.csprojResolveAssemblyReference.cache
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\Pruebas\obj\x86\Debug\Pruebas.Test.resources
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\Pruebas\obj\x86\Debug\Pruebas.csproj.GenerateResource.Cache
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\Pruebas\obj\x86\Debug\Pruebas.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\repository\tsc1\Prácticas\Práctica7-DBNet\WQLUtil\Pruebas\obj\x86\Debug\Pruebas.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\Pruebas\bin\Debug\Pruebas.exe.config
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\Pruebas\obj\x86\Debug\Pruebas.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\Pruebas\obj\x86\Debug\Pruebas.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\Pruebas\bin\Debug\Pruebas.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\Pruebas\bin\Debug\Pruebas.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\Pruebas\bin\Debug\WQLUtil.dll
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\Pruebas\bin\Debug\WQLUtil.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\Pruebas\obj\x86\Debug\Pruebas.csprojResolveAssemblyReference.cache
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\Pruebas\obj\x86\Debug\Pruebas.Test.resources
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\5_Agosto13_Diciembre13\TSCI\tmp\Práctica8-WQLUtil\Pruebas\obj\x86\Debug\Pruebas.csproj.GenerateResource.Cache
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\Práctica 13 - WQLUtil\Pruebas\bin\Debug\Pruebas.exe.config
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\Práctica 13 - WQLUtil\Pruebas\obj\x86\Debug\Pruebas.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\7_Agosto14_Diciembre14\TSCI\repository\tsc1\Prácticas\Práctica 13 - WQLUtil\Pruebas\obj\x86\Debug\Pruebas.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\Práctica 13 - WQLUtil\Pruebas\bin\Debug\Pruebas.exe.config
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\Práctica 13 - WQLUtil\Pruebas\obj\x86\Debug\Pruebas.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\Práctica 13 - WQLUtil\Pruebas\obj\x86\Debug\Pruebas.pdb
