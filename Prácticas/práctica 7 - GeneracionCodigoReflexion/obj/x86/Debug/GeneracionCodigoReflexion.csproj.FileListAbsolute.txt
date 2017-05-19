@@ -10,3 +10,6 @@ C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\re
 C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\práctica 7 - GeneracionCodigoReflexion\bin\Debug\GeneracionCodigoReflexion.exe.config
 C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\práctica 7 - GeneracionCodigoReflexion\obj\x86\Debug\GeneracionCodigoReflexion.exe
 C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\práctica 7 - GeneracionCodigoReflexion\obj\x86\Debug\GeneracionCodigoReflexion.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\práctica 7 - GeneracionCodigoReflexion\bin\Debug\GeneracionCodigoReflexion.exe
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\práctica 7 - GeneracionCodigoReflexion\bin\Debug\GeneracionCodigoReflexion.pdb
+C:\Users\servkey\Google Drive\Documentos\FEI\Cursos\12_Febrero17_Julio17\TSCI\repository\tsc1\Prácticas\práctica 7 - GeneracionCodigoReflexion\obj\x86\Debug\GeneracionCodigoReflexion.csprojResolveAssemblyReference.cache
